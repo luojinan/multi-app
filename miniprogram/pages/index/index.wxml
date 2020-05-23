@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="index">
+
+<view class="app-inner cu-list grid col-3">
+  <view class="cu-item" wx:for="{{appList}}" wx:key="index" bind:tap="toApp" data-url="{{item.url}}">
+    <text class="cuIcon-{{item.icon}} lg text-gray"></text>
+    <text>{{item.name}}</text>
+  </view>
+</view>
+</view>
